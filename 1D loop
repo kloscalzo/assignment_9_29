@@ -1,0 +1,23 @@
+//Katharine LoScalzo
+//4 October 2016
+
+//one dimensional loop
+
+var d = 300;
+var offset = 30;
+
+function setup() {
+
+    createCanvas(600, 600);
+}
+
+function draw() {
+
+    //for loop pseudocode 
+    //for (start condition; exit conditionl iterator){
+    //ellispe(width/2, height/2, d,d);
+
+    for (var i = 0; i < 10; i++) {
+        ellipse(width / 2, height / 2, d - (i * offset), d - (i * offset));
+    }
+}
