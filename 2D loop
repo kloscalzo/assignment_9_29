@@ -1,0 +1,26 @@
+//Katharine LoScalzo
+//4 October 2016
+//2 dimensional loop
+
+var offset = 30;
+var k = 20;
+var padding = 50;
+var ultrapadding = 350;
+
+function setup() {
+
+    createCanvas(600, 600);
+}
+
+function draw() {
+
+for (var j = 0; j < 8; j++) {
+        for (var i = 0; i < 10; i++){
+            
+            rect((i * offset)+padding, (j * offset)+padding,k,k);
+            
+            ellipse((i * offset)+ultrapadding, (j * offset)+ultrapadding,k,k);    
+            
+         }
+     }
+}
